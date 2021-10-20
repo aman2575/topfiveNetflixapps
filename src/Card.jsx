@@ -1,4 +1,8 @@
 import React from "react";
+import Heading from "./Headings";
+import Images from "./Images";
+
+
 
 function Card(props){
     //console.log(props)
@@ -8,12 +12,12 @@ function Card(props){
         <div className="img-container">
             <div className="img-inner">
             <div className="inner-skew">
-                <img src={props.imgsrc}/>
+                <Images imgsrc={props.imgsrc}/>
             </div>
             </div>
         </div>
         <div className="text-container">
-            <h3>{props.title}</h3>
+            <Heading title={props.title}/>
             <div>
             {props.sname}  
         </div>
